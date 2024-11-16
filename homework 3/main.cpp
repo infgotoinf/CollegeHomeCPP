@@ -17,6 +17,7 @@ int main() {
 	std::cout << "\n\n";
 
 	// Number 2
+	system("chcp 1251");
 	setlocale(0, "");
 	int c;
 	std::cout << "How old are you?\n";
