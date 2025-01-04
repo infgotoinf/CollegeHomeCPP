@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{c3efd833-beea-4b61-8d67-12f4f368463f}</ProjectGuid>
-    <RootNamespace>git</RootNamespace>
+    <ProjectGuid>{3d41fb21-0054-451c-a511-8109e86b055c}</ProjectGuid>
+    <RootNamespace>homework4</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>a 4</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
