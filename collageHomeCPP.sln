@@ -3,21 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a 0 - Git", "a 0 - Git\a 0 - Git.vcxproj", "{C3EFD833-BEEA-4B61-8D67-12F4F368463F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "00 - Git", "00 - Git\00 - Git.vcxproj", "{C3EFD833-BEEA-4B61-8D67-12F4F368463F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a 3 - Basics", "a 3 - Basics\a 3 - Basics.vcxproj", "{9D801F27-E205-475F-BFF1-E470D41A7C63}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03 - Basics", "03 - Basics\03 - Basics.vcxproj", "{9D801F27-E205-475F-BFF1-E470D41A7C63}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a 4 - Functions", "a 4 - Functions\a 4 - Functions.vcxproj", "{3D41FB21-0054-451C-A511-8109E86B055C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04 - Functions", "04 - Functions\04 - Functions.vcxproj", "{3D41FB21-0054-451C-A511-8109E86B055C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a 5 - Functions2", "a 5 - Functions2\a 5 - Functions2.vcxproj", "{243B716A-CB06-4BAB-94E5-6A480B0AC881}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05 - Functions2", "05 - Functions2\05 - Functions2.vcxproj", "{243B716A-CB06-4BAB-94E5-6A480B0AC881}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a 6 - Arrays", "a 6 - Arrays\a 6 - Arrays.vcxproj", "{6E49231D-3532-4B11-B275-4FAD8238331E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06 - Arrays", "06 - Arrays\06 - Arrays.vcxproj", "{6E49231D-3532-4B11-B275-4FAD8238331E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a 7 - Arrays2", "a 7 - Arrays2\a 7 - Arrays2.vcxproj", "{2383DCC9-44F3-4D30-90D0-1E2DF8B30A09}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07 - Arrays2", "07 - Arrays2\07 - Arrays2.vcxproj", "{2383DCC9-44F3-4D30-90D0-1E2DF8B30A09}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a 8 - Pointers", "a 8 - Pointers\a 8 - Pointers.vcxproj", "{6F5399E6-CC9C-4306-B61F-022B4868B531}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08 - Pointers", "08 - Pointers\08 - Pointers.vcxproj", "{6F5399E6-CC9C-4306-B61F-022B4868B531}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "b 10 - Structures2", "b 10 - Structures2\b 10 - Structures2.vcxproj", "{4E9719DD-E052-46C1-81E2-5F6E38F77132}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09 - Structures", "09 - Structures\09 - Structures.vcxproj", "{594FE8C2-E950-4921-93B7-2C5D39BEA429}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10 - Structures2", "10 - Structures2\10 - Structures2.vcxproj", "{4E9719DD-E052-46C1-81E2-5F6E38F77132}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +85,14 @@ Global
 		{6F5399E6-CC9C-4306-B61F-022B4868B531}.Release|x64.Build.0 = Release|x64
 		{6F5399E6-CC9C-4306-B61F-022B4868B531}.Release|x86.ActiveCfg = Release|Win32
 		{6F5399E6-CC9C-4306-B61F-022B4868B531}.Release|x86.Build.0 = Release|Win32
+		{594FE8C2-E950-4921-93B7-2C5D39BEA429}.Debug|x64.ActiveCfg = Debug|x64
+		{594FE8C2-E950-4921-93B7-2C5D39BEA429}.Debug|x64.Build.0 = Debug|x64
+		{594FE8C2-E950-4921-93B7-2C5D39BEA429}.Debug|x86.ActiveCfg = Debug|Win32
+		{594FE8C2-E950-4921-93B7-2C5D39BEA429}.Debug|x86.Build.0 = Debug|Win32
+		{594FE8C2-E950-4921-93B7-2C5D39BEA429}.Release|x64.ActiveCfg = Release|x64
+		{594FE8C2-E950-4921-93B7-2C5D39BEA429}.Release|x64.Build.0 = Release|x64
+		{594FE8C2-E950-4921-93B7-2C5D39BEA429}.Release|x86.ActiveCfg = Release|Win32
+		{594FE8C2-E950-4921-93B7-2C5D39BEA429}.Release|x86.Build.0 = Release|Win32
 		{4E9719DD-E052-46C1-81E2-5F6E38F77132}.Debug|x64.ActiveCfg = Debug|x64
 		{4E9719DD-E052-46C1-81E2-5F6E38F77132}.Debug|x64.Build.0 = Debug|x64
 		{4E9719DD-E052-46C1-81E2-5F6E38F77132}.Debug|x86.ActiveCfg = Debug|Win32
