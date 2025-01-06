@@ -17,7 +17,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a 7 - Arrays2", "a 7 - Arra
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a 8 - Pointers", "a 8 - Pointers\a 8 - Pointers.vcxproj", "{6F5399E6-CC9C-4306-B61F-022B4868B531}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "b 10 - Structures2", "a 9 - Structures2\a 9 - Structures2.vcxproj", "{4E9719DD-E052-46C1-81E2-5F6E38F77132}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "b 10 - Structures2", "b 10 - Structures2\b 10 - Structures2.vcxproj", "{4E9719DD-E052-46C1-81E2-5F6E38F77132}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
