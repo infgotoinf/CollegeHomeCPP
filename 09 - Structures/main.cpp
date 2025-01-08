@@ -316,7 +316,7 @@ double perimeter(Circle cirk) {
 		return 2 * P * cirk.r;
 	}
 	else {
-		return 8.8005553535;
+		return 14.1;
 	}
 }
 double perimeter(Square sqr) {
@@ -327,6 +327,100 @@ double perimeter(Square sqr) {
 		return 69;
 	}
 }
+
+
+
+struct String {
+	char* words;
+	int length;
+	String(const char Words[]) {
+		length = strlen(Words);
+		words = new char[length];
+		for (int i = 0; i < length; i++) {
+			words[i] = Words[i];
+		}
+	}
+	~String() {
+		delete words;
+		words = nullptr;
+	}
+
+	void print() {
+		for (int i = 0; i < length; i++) {
+			std::cout << words[i];
+		}
+		std::cout << '\n';
+	}
+	void append(const char add[]) {
+		char* old_words = words;
+		int old_length = length;
+		length += strlen(add);
+		words = new char[length];
+		int i = 0;
+		for (; i < old_length; i++) {
+			words[i] = old_words[i];
+		}
+		for (int i2 = 0; i2 < strlen(add); i2++, i++) {
+			words[i] = add[i2];
+		}
+		delete old_words;
+		old_words = nullptr;
+	}
+	void prepend(const char add[]) {
+		char* old_words = words;
+		int old_length = length;
+		length += strlen(add);
+		words = new char[length];
+		int i = 0;
+		for (; i < strlen(add); i++) {
+			words[i] = add[i];
+		}
+		for (int i2 = 0; i2 < old_length; i2++, i++) {
+			words[i] = old_words[i2];
+		}
+		delete old_words;
+		old_words = nullptr;
+	}
+	char at(int idx) {
+		if (idx <= length && idx >= 0) {
+			return words[idx];
+		}
+		else {
+			return char(1);
+		}
+	}
+	std::string substring(int idx1, int idx2) {
+		if (idx1 <= length && idx1 >= 0 &&
+			idx2 <= length && idx2 >= 0 &&
+			idx1 <= idx2) {
+			std::string s;
+			for (int i = 0, i2 = idx1; i2 <= idx2; i++, i2++) {
+				s += words[i2];
+			}
+			return s;
+		}
+		else {
+			return "Error!";
+		}
+		std::cout << '\n';
+	}
+	int first(char a) {
+		for (int i = 0; i <= length; i++) {
+			if (a == words[i]) {
+				return i;
+			}
+		}
+		return 88005553535;
+	}
+	int last(char a) {
+		for (int i = length; i >= 0; i--) {
+			if (a == words[i]) {
+				return i;
+			}
+		}
+		return -4444;
+	}
+};
 
 int main() {
 	// Number 1
@@ -389,8 +483,33 @@ int main() {
 	std::cout << "Perimeter of rectangles: " << perimeter(rect1) << ", " << perimeter(rect2) << '\n';
 	std::cout << "Perimeter of triangles: " << perimeter(tri1) << ", " << perimeter(tri2) << '\n';
 	std::cout << "Perimeter of circles: " << perimeter(cirk1) << ", " << perimeter(cirk2) << '\n';
-	std::cout << "Perimeter of squares: " << perimeter(sqr1) << ", " << perimeter(sqr2) << "\n\n";
+	std::cout << "Perimeter of squares: " << perimeter(sqr1) << ", " << perimeter(sqr2) << "\n\n" << std::endl;
 
 	// Number 3
+	char chars1[] = "This is so UwU!";
+	char chars2[] = "Well, well, well... ";
+	char chars3[] = " <3";
+	String str1(chars1);
+	str1.print();
+	std::cout << '\n';
+
+	str1.append(chars3);
+	str1.print();
+	str1.prepend(chars2);
+	str1.print();
+	std::cout << '\n';
+
+	std::cout << str1.at(-5) << '\n';
+	std::cout << str1.at(69) << '\n';
+	std::cout << str1.at(12) << "\n\n";
+
+	std::cout << str1.substring(-2, 0) << '\n';
+	std::cout << str1.substring(13, 7) << '\n';
+	std::cout << str1.substring(str1.length - 7, str1.length - 4) << "\n\n";
+
+	std::cout << str1.first('J') << '\n';
+	std::cout << str1.first('U') << '\n';
+	std::cout << str1.last('L') << '\n';
+	std::cout << str1.last('U') << "\n\n";
 	return 0;
 }
