@@ -45,12 +45,18 @@ public:
 
 	bool isReady() const
 	{
-		int payload;
-		for (Package &i : packages)
+		int payload = 0;
+		// Если поставить ссылку то выдаст ошибку лол
+		for (Package i : packages)
 		{
 			payload += i.GetWeight();
 		}
 		return (payload > maxPayload ? false : true);
+	}
+	
+	void updPackages(const std::list<Package>& pack)
+	{
+		packages = pack;
 	}
 };
 
