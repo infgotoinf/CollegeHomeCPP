@@ -44,7 +44,7 @@ int main() {
 	}
 	catch (...)
 	{
-		exept()
+		exept();
 	}
 	return 0;
 }
