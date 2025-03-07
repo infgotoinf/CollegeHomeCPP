@@ -6,18 +6,20 @@
 #include <string>
 #include "LandVehicle.h"
 
-class Car
+class Car : public LandVehicle
 {
 protected:
 	std::string model, mark, colour;
-	int year, run, cost;
+	int year, run, cost, currentVelosity, distance;
 
 public:
 	Car(std::string model, std::string mark, std::string colour,
-		int year, int run, int cost)
+		int year, int run, int cost, int currentVelosity, int distance)
 		: model(model), mark(mark), colour(colour)
 		, year(year), run(run), cost(cost)
-	{}
+		, LandVehicle(currentVelosity, distance)
+	{
+	}
 	~Car() = default;
 
 	Car(Car const& other)
@@ -26,8 +28,10 @@ public:
 		colour(other.colour),
 		year(other.year),
 		run(other.run),
-		cost(other.cost)
-	{}
+		cost(other.cost),
+		LandVehicle(currentVelosity, distance)
+	{
+	}
 
 	Car& operator=(Car const& other)
 	{
