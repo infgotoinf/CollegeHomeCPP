@@ -12,11 +12,12 @@ public:
     }
     ~Animatronic() = default;
 
-    template <typename T>
+    template <class T>
     Animatronic& operator=(T const& other)
     {
-        name = other.name;
-        color = other.color;
+        name = other->name;
+        color = other->color;
+        return *this;
     }
 
     std::string GetName() const
@@ -28,15 +29,6 @@ public:
     {
         return color;
     }
-};
-
-
-enum AnimatronicName
-{
-    fready,
-    bonnie,
-    chica,
-    foxy
 };
 
 
@@ -81,33 +73,49 @@ public:
 };
 
 
-class AnimatronicFactory {
-public:
-    Animatronic CreateAnimatronic(AnimatronicName name) {
-        Animatronic animatronic;
-
-        switch (name) {
-        case fready:
-            animatronic = new Fready();
-            break;
-        case bonnie:
-            animatronic = new Bonnie();
-            break;
-        case chica:
-            animatronic = new Chica();
-            break;
-        case foxy:
-            animatronic = new Foxie();
-            break;
-        }
-
-        return animatronic;
-    }
+enum AnimatronicName
+{
+    fready,
+    bonnie,
+    chica,
+    foxy
 };
+
+
+Animatronic AnimatronicFactory(AnimatronicName name) {
+    Animatronic animatronic;
+
+    switch (name) {
+    case fready:
+        animatronic = new Fready();
+        break;
+    case bonnie:
+        animatronic = new Bonnie();
+        break;
+    case chica:
+        animatronic = new Chica();
+        break;
+    case foxy:
+        animatronic = new Foxie();
+        break;
+    }
+
+    return animatronic;
+}
 
 int main()
 {
-    
+    Animatronic First = AnimatronicFactory(fready);
+    //Представьте, что тут есть код...
+    //Представьте, что тут есть код...
+    //Представьте, что тут есть код...
+    //Представьте, что тут есть код...
+    //Представьте, что тут есть код...
+    //Представьте, что тут есть код...
+    //Представьте, что тут есть код...
+    //Представьте, что тут есть код...
+    //Представьте, что тут есть код...
+    //Представьте, что тут есть код...
 
 	return 0;
 }
