@@ -4,7 +4,6 @@
 #define CAR_H
 
 #include <string>
-#include "LandVehicle.h"
 
 class Car
 {
